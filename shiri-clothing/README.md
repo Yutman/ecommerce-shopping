@@ -94,3 +94,12 @@ It allows us to use a more readable and legible kind of input for button type, b
 ## Backticks
 primarily used for defining template literals, which allow for multi-line strings and embedding expressions directly within strings.
 
+## Switch Case
+In my sign-in form I used a switch statement. A switch statement allows a variable to be tested for equality against a list of values.
+In my case the expression 'error.code' is evaluated once at the beginnning. The 'error' object contains info about an error that occurred during a sign-in process, and 'error.code' is a property that specifies type of error.
+If error.code equals 'auth/wrong-password', it matches the first case. The code block associated with this case, alert('incorrect password for email');, is executed.
+If error.code equals 'auth/user-not-found', it matches the second case. The code block alert('no user associated with this email'); is executed, informing the user that no account is associated with the provided email.
+Break statement terminates the switch statement preventing any other cases from being executed.
+The default at the end might be used to handle other unspecified error codes by displaying a generic error message.
+The log error at the end of default is used to log error for other developers.
+
