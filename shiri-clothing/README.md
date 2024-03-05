@@ -68,3 +68,29 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Classes
+ Classes are used to create React components before the introduction of hooks in React 16.8. 
+ A class component in React extends React.Component and typically includes a render method, which returns JSX to define the component's UI. 
+ Class components can hold state and lifecycle methods (e.g., componentDidMount) to execute code at specific points in the component's lifecycle.
+
+## Components
+In React: Components are independent, reusable pieces of your UI. 
+They can be defined using either functions or classes. 
+Components take in parameters, called props, and return a hierarchy of views to display via the render method (for class components) or directly (for function components).
+
+ ## Objects 
+ In JavaScript, an object is an instance of a class
+ Objects are key-value pairs where you can store and access data
+ In React: Objects are used extensively, for example, as state in class components, or the argument to useState in functional components. 
+ Props passed to components are also objects. 
+ Additionally, the style attribute in JSX expects an object where CSS properties are defined in camelCase.
+
+How to leverage the button type in order to show styling for three different kinds of buttons;
+We can control the style by a class to have default, inverted, and google sign in
+I created a variable 'BUTTON_TYPE_CLASSES'. Inside we know, for example, if we get past some value like button type, if the value is the string of google, then we want to render the class name 'Google sign-in'
+It allows us to use a more readable and legible kind of input for button type, but render whatever it is internally that we need in order to properly display this button type. 
+
+## Backticks
+primarily used for defining template literals, which allow for multi-line strings and embedding expressions directly within strings.
+
